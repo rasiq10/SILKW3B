@@ -33,7 +33,7 @@ app.use(express.urlencoded({extended:true}));
 
 require("./app/routes/silkw3b.routes")(app);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8888;
 
 app.listen(PORT,()=>{
     console.log(`Server is running on ${PORT}`);

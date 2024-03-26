@@ -49,15 +49,4 @@ export class ContactUsComponent  implements OnInit{
       error:(e) => console.log(e)
     });
   }
-
-  // newContact(): void{
-  //   this.submitted = false;
-  //   this.contact = {
-  //     name: '',
-  //     email: '',
-  //     phone: '',
-  //     subject: '',
-  //     message: ''
-  //   };
-  // }
 }
