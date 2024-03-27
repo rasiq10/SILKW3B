@@ -33,8 +33,12 @@ app.use(express.urlencoded({extended:true}));
 
 require("./app/routes/silkw3b.routes")(app);
 
-const PORT =  process.env.port;
+const PORT =  process.env.port || 10000;
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+  
 app.listen(PORT,()=>{
     console.log(`Server is running on ${PORT}`);
 });
